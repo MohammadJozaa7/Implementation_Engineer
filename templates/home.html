@@ -1,9 +1,61 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div class="jumbotron text-center">
-  <h1>Welcome To FlaskApp</h1>
-  <p class="lead">This application is built on the Python Flask framework and is the focus for the "Python Flask From
-    Scratch" YouTube series</p>
+<div class=" text-center">
+  <h1>Welcome To BriteCore Dashboard</h1>
+  <table class="table table-striped table-bordered table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Client</th>
+        <th scope="col">Client Priority</th>
+        <th scope="col">Target Date</th>
+        <th scope="col">Product Area</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>feature test</td>
+        <td>feature description</td>
+        <td>select of clients</td>
+        <td>order ?</td>
+        <td>done on 1\6\2019</td>
+        <td> 'Policies', 'Billing', 'Claims', 'Reports'</td>
+        <td>
+          <button class="btn btn-outline-info" data-toggle="modal" data-target="#editFeature" type="button">
+            <i class="fas fa-edit"> </i>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-outline-danger " data-toggle="modal" data-target="#editFeature" type="button">
+            <i class="fas fa-trash-alt"> </i>
+          </button>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>feature test</td>
+        <td>feature description</td>
+        <td>select of clients</td>
+        <td>order ?</td>
+        <td>done on 1\6\2019</td>
+        <td> 'Policies', 'Billing', 'Claims', 'Reports'</td>
+        <td>
+          <button class="btn btn-outline-info" data-toggle="modal" data-target="#editFeature" type="button">
+            <i class="fas fa-edit"> </i>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-outline-danger " data-toggle="modal" data-target="#editFeature" type="button">
+            <i class="fas fa-trash-alt"> </i>
+          </button>
+      </tr>
+      </tr>
+    </tbody>
+  </table>
 </div>
 {% endblock %}
