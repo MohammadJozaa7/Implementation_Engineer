@@ -1,46 +1,43 @@
 <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Title</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Client</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input id="title" type="text" placeholder="Title" class="form-control">
   </div>
   <div class="form-group">
-    <label for="inputAddress">Description</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Client Priority</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    <label for="description">Description</label>
+    <textarea id="description" type="text" rows="3" placeholder="Description" class="form-control"></textarea>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">Target Date</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState"> Product Area </label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
+      <label for="client">Client</label>
+      <select id="client" class="form-control">
+        <option>Client A</option>
+        <option>Client B</option>
+        <option>Client C</option>
       </select>
     </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
+    <div class="form-group col-md-6">
+      <label for="productArea"> Product Area </label>
+      <select id="productArea" class="form-control">
+        <option>Billing</option>
+        <option>Claims</option>
+        <option>Policies</option>
+        <option>Reports</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="targetDate">Target Date</label>
+      <input id="targetDate" type="date" class="form-control">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="clientPriority">Client Priority</label>
+      <input id="clientPriority" type="number" placeholder="1...n"
+        onkeydown="javascript: if(event.keyCode == 190 || event.keyCode == 189 || event.keyCode ==187 ||event.keyCode == 69){return false}else{return true}"
+        class=" form-control">
     </div>
   </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+
 </form>
